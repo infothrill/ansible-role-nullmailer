@@ -1,0 +1,7 @@
+---
+# handlers file for nullmailer
+
+- name: "restart nullmailer"
+  service:
+    name: nullmailer
+    state: restarted

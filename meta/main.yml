@@ -1,0 +1,22 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: lynis
+  author: infothrill
+  description: Lynis is a security auditing tool for Unix and Linux systems.
+  company: "n/a"
+  license: "MIT"
+  min_ansible_version: 2.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - stretch
+        - jessie
+  galaxy_tags:
+    - security
+    - monitoring

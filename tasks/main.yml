@@ -1,0 +1,41 @@
+---
+- name: "install nullmailer"
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - nullmailer
+
+- name: "configure nullmailer remotes"
+  template:
+    dest: /etc/nullmailer/remotes
+    src: nullmailer_remotes
+    owner: mail
+    group: mail
+    mode: 0600
+  notify: restart nullmailer
+
+- name: "configure nullmailer adminaddr"
+  template:
+    dest: /etc/nullmailer/adminaddr
+    src: nullmailer_adminaddr
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart nullmailer
+
+- debug:
+    var: ansible_service_mgr
+
+# - shell: service status nullmailer
+#  register: shell_out
+
+# - debug:
+#    var: shell_out
+
+- name: enable nullmailer
+  service:
+    name: nullmailer
+    state: started
+    enabled: true

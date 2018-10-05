@@ -1,0 +1,12 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: false
+  roles:
+    - {role: robertdebock.bootstrap, bootstrap_preview: false}
+#  tasks:
+#    - name: "fake systemd canary for ansible service module"
+#      file:
+#        path: /dev/.systemd/
+#        state: directory
+#      when: ansible_distribution_release == "bionic"
