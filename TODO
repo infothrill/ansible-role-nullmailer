@@ -1,4 +1,0 @@
-    TASK [ansible-role-nullmailer : enable nullmailer] *****************************
-    fatal: [nullmailer-ubuntu-1804]: FAILED! => {"changed": false, "msg": "Could not find the requested service nullmailer: host"}
-
-
