@@ -72,6 +72,6 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
-### v1.0
+### v1.0.0
 
 * initial release
