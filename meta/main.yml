@@ -2,12 +2,12 @@
 dependencies: []
 
 galaxy_info:
-  role_name: lynis
+  role_name: nullmailer
   author: infothrill
-  description: Lynis is a security auditing tool for Unix and Linux systems.
+  description: An Ansible role to install nullmailer, a simple relay-only mail transport agent.
   company: "n/a"
   license: "MIT"
-  min_ansible_version: 2.4
+  min_ansible_version: 2.5
   platforms:
     - name: Ubuntu
       versions:
