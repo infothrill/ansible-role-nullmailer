@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/infothrill/ansible-role-nullmailer/master.svg?label=travis_master)](https://travis-ci.org/infothrill/ansible-role-nullmailer)
 [![Build Status](https://img.shields.io/travis/infothrill/ansible-role-nullmailer/develop.svg?label=travis_develop)](https://travis-ci.org/infothrill/ansible-role-nullmailer)
 [![Updates](https://pyup.io/repos/github/infothrill/ansible-role-nullmailer/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-nullmailer/)
-[![Ansible Role](https://img.shields.io/ansible/role/25378.svg)](https://galaxy.ansible.com/infothrill/nullmailer/)
+[![Ansible Role](https://img.shields.io/ansible/role/30364.svg)](https://galaxy.ansible.com/infothrill/nullmailer/)
 
 An [Ansible](http://www.ansible.com) role to install [nullmailer](https://untroubled.org/nullmailer/),
 a simple relay-only mail transport agent.
