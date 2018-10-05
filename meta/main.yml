@@ -18,5 +18,4 @@ galaxy_info:
         - stretch
         - jessie
   galaxy_tags:
-    - security
-    - monitoring
+    - email
