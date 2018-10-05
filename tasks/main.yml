@@ -25,15 +25,6 @@
     mode: 0644
   notify: restart nullmailer
 
-- debug:
-    var: ansible_service_mgr
-
-# - shell: service status nullmailer
-#  register: shell_out
-
-# - debug:
-#    var: shell_out
-
 - name: enable nullmailer
   service:
     name: nullmailer
