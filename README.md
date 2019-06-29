@@ -13,7 +13,7 @@ a simple relay-only mail transport agent.
 requirements.yml:
 
     - src: infothrill.nullmailer
-      version: v1.0.1
+      version: v1.1.0
 
 Install:
 
@@ -58,6 +58,14 @@ nullmailer_relay_pass: 50m3p455w0r6
 
 The SMTP password for authenticating with the `nullmailer_relay_host`.
 
+```yml
+nullmailer_allmailfrom: spambot@example.com
+```
+
+If this is defined, its contents will override the envelope sender on
+all messages. Please exercise caution with this setting as this determines bounce behaviour of undeliverable messages.
+
+
 ## Dependencies
 
 None.
@@ -72,9 +80,11 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
-### v1.0.x
+### v1.1.0
 
-* testing support for ansible 2.8
+* add optional variable *nullmailer_allmailfrom*
+* testing support for Ansible 2.8
+* testing support for Debian 10 *Buster*
 
 ### v1.0.1
 

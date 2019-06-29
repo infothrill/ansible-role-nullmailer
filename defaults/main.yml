@@ -5,3 +5,4 @@ nullmailer_relay_host: smtp.example.com
 nullmailer_relay_port: 465
 nullmailer_relay_user: john@example.com
 nullmailer_relay_pass: 50m3p455w0r6
+# nullmailer_allmailfrom:

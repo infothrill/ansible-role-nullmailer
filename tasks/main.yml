@@ -25,6 +25,16 @@
     mode: 0644
   notify: restart nullmailer
 
+- name: "configure nullmailer allmailfrom"
+  template:
+    dest: /etc/nullmailer/allmailfrom
+    src: nullmailer_allmailfrom
+    owner: root
+    group: root
+    mode: 0644
+  when: nullmailer_allmailfrom is defined
+  notify: restart nullmailer
+
 - name: enable nullmailer
   service:
     name: nullmailer
