@@ -13,7 +13,7 @@ a simple relay-only mail transport agent.
 requirements.yml:
 
     - src: infothrill.nullmailer
-      version: v1.1.0
+      version: v2.0.0
 
 Install:
 
