@@ -83,6 +83,7 @@ This role was created in 2018 by Paul Kremer.
 ### v2.0.0
 
 * switch testing framework to python3, drop support for python2
+* testing support for Ansible 2.9
 
 ### v1.1.0
 
