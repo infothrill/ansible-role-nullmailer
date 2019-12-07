@@ -80,6 +80,10 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### v2.0.0
+
+* switch testing framework to python3, drop support for python2
+
 ### v1.1.0
 
 * add optional variable *nullmailer_allmailfrom*
