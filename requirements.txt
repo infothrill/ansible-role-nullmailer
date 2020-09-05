@@ -1,6 +1,6 @@
 molecule==3.0.8
 testinfra==4.0.0
-yamllint==1.20.0
+yamllint==1.24.2
 flake8==3.7.9
 ansible-lint==4.3.2
 # needed in this case because we run tests with docker containers:
