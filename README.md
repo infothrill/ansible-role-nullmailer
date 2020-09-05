@@ -80,6 +80,11 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### v3.0.0 (unreleased)
+
+* upgrade to molecule version 3
+* drop support for ansible 2.5, 2.6, 2.7
+
 ### v2.0.0
 
 * switch testing framework to python3, drop support for python2
