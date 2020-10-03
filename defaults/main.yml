@@ -6,3 +6,5 @@ nullmailer_relay_port: 465
 nullmailer_relay_user: john@example.com
 nullmailer_relay_pass: 50m3p455w0r6
 # nullmailer_allmailfrom:
+nullmailer_remote_ssl: true  # switch for --ssl parameter
+nullmailer_remote_starttls: false  # switch for --starttls parameter

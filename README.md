@@ -13,7 +13,7 @@ a simple relay-only mail transport agent.
 requirements.yml:
 
     - src: infothrill.nullmailer
-      version: v2.0.0
+      version: v3.0.0
 
 Install:
 
@@ -65,6 +65,17 @@ nullmailer_allmailfrom: spambot@example.com
 If this is defined, its contents will override the envelope sender on
 all messages. Please exercise caution with this setting as this determines bounce behaviour of undeliverable messages.
 
+```yml
+nullmailer_remote_ssl: true|false
+```
+Toggle to add --ssl parameter for remote, default true.
+
+
+```yml
+nullmailer_remote_starttls: true|false
+```
+Toggle to add --starttls parameter for remote, default false.
+
 
 ## Dependencies
 
@@ -82,8 +93,10 @@ This role was created in 2018 by Paul Kremer.
 
 ### v3.0.0 (unreleased)
 
+* add configuration switch for `--ssl` and `--starttls`
 * upgrade to molecule version 3
 * drop support for ansible 2.5, 2.6, 2.7
+* add test for ubuntu 20.04
 
 ### v2.0.0
 
