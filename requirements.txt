@@ -1,5 +1,5 @@
 ansible-lint==4.3.5
-molecule==3.0.8
+molecule==3.1.1
 flake8==3.8.4
 testinfra==5.3.1
 yamllint==1.25.0
