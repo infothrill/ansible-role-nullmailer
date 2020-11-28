@@ -91,6 +91,10 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### v3.0.1
+
+* testing support for Ansible 2.10
+
 ### v3.0.0
 
 * add configuration switch for `--ssl` and `--starttls`
