@@ -91,6 +91,11 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### v3.0.1
+
+* drop test support for python 3.6
+* add test support for python 3.7, 3.8, 3.9
+
 ### v3.0.0
 
 * add configuration switch for `--ssl` and `--starttls`
