@@ -95,6 +95,8 @@ This role was created in 2018 by Paul Kremer.
 
 * drop test support for python 3.6
 * add test support for python 3.7, 3.8, 3.9
+* drop support for ansible 2.8
+* add support for ansible 2.10, 3.0
 
 ### v3.0.0
 
