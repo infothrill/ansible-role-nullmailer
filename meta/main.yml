@@ -3,6 +3,7 @@ dependencies: []
 
 galaxy_info:
   role_name: nullmailer
+  namespace: infothrill
   author: infothrill
   description: An Ansible role to install nullmailer, a simple relay-only mail transport agent.
   company: "n/a"
