@@ -3,28 +3,30 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
+  enabled: false
 driver:
   name: docker
 lint: |
-    set -e
     yamllint .
-    ansible-lint
-    flake8
+    ansible-lint --offline --exclude molecule
 platforms:
   - name: nullmailer-ubuntu-2004
     image: ubuntu:20.04
+    command: /lib/systemd/systemd
+    privileged: true
   - name: nullmailer-ubuntu-1804
     image: ubuntu:18.04
-    # image: geerlingguy/docker-ubuntu1804-ansible:latest
     command: /lib/systemd/systemd
     privileged: true
   - name: nullmailer-ubuntu-1604
     image: ubuntu:16.04
   - name: nullmailer-debian-10-buster
     image: debian:buster
+    command: /lib/systemd/systemd
+    privileged: true
   - name: nullmailer-debian-9-stretch
     image: debian:stretch
-  - name: nullmailer-debian-8-jessie
-    image: debian:jessie
+    command: /lib/systemd/systemd
+    privileged: true
 provisioner:
   name: ansible

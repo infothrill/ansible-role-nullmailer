@@ -91,6 +91,10 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### v3.0.x
+
+* drop test support for Debian Jessie
+
 ### v3.0.1
 
 * drop test support for python 3.6
