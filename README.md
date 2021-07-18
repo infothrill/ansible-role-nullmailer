@@ -1,7 +1,6 @@
 # Ansible Role: nullmailer
 
 ![Build status](https://github.com/infothrill/ansible-role-nullmailer/actions/workflows/tests.yml/badge.svg)
-[![Updates](https://pyup.io/repos/github/infothrill/ansible-role-nullmailer/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-nullmailer/)
 [![Ansible Role](https://img.shields.io/ansible/role/30364.svg)](https://galaxy.ansible.com/infothrill/nullmailer/)
 
 An [Ansible](http://www.ansible.com) role to install [nullmailer](https://untroubled.org/nullmailer/),
