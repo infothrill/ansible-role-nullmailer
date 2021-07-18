@@ -1,7 +1,6 @@
 # Ansible Role: nullmailer
 
-[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-nullmailer/master.svg?label=travis_master)](https://travis-ci.org/infothrill/ansible-role-nullmailer)
-[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-nullmailer/develop.svg?label=travis_develop)](https://travis-ci.org/infothrill/ansible-role-nullmailer)
+![Build status](https://github.com/infothrill/ansible-role-nullmailer/actions/workflows/tests.yml/badge.svg)
 [![Updates](https://pyup.io/repos/github/infothrill/ansible-role-nullmailer/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-nullmailer/)
 [![Ansible Role](https://img.shields.io/ansible/role/30364.svg)](https://galaxy.ansible.com/infothrill/nullmailer/)
 
@@ -94,6 +93,9 @@ This role was created in 2018 by Paul Kremer.
 ### v3.0.x
 
 * drop test support for Debian Jessie
+* drop support for python 3.7
+* drop support for ansible 2.9
+* switch to Github Actions for CI
 
 ### v3.0.1
 
