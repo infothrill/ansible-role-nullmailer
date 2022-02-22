@@ -1,1 +1,1 @@
-{{ nullmailer_relay_host }} smtp --port={{ nullmailer_relay_port }} --auth-login --user={{ nullmailer_relay_user }} --pass={{ nullmailer_relay_pass }}{% if nullmailer_remote_ssl %} --ssl{% endif %}{% if nullmailer_remote_starttls %} --starttls{% endif %}
+{{ nullmailer_relay_host }} smtp --port={{ nullmailer_relay_port }}{% if nullmailer_relay_user %} --auth-login --user={{ nullmailer_relay_user }} --pass={{ nullmailer_relay_pass }}{% endif %}{% if nullmailer_remote_ssl %} --ssl{% endif %}{% if nullmailer_remote_starttls %} --starttls{% endif %}
