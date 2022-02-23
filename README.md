@@ -89,11 +89,12 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
-### v3.0.x
+### v3.1.0
 
+* add: nullmailer_relay_user can be empty to skip relay authentication
 * drop test support for Debian Jessie
 * drop support for python 3.7
-* drop support for ansible 2.9
+* drop support for ansible 2.9, 2.10, add ansible 4, 5
 * switch to Github Actions for CI
 
 ### v3.0.1
