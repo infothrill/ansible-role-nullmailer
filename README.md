@@ -11,7 +11,7 @@ a simple relay-only mail transport agent.
 requirements.yml:
 
     - src: infothrill.nullmailer
-      version: v3.0.0
+      version: v3.1.0
 
 Install:
 
@@ -48,7 +48,7 @@ The port used to connect via SMTP to the `nullmailer_relay_host`.
 nullmailer_relay_user: john@example.com
 ```
 
-The SMTP username for authenticating with the `nullmailer_relay_host`.
+The SMTP username for authenticating with the `nullmailer_relay_host`. Can be set to empty string, in which case authentication is skipped entirely (useful for example in case you use IP based trust).
 
 ```yml
 nullmailer_relay_pass: 50m3p455w0r6
