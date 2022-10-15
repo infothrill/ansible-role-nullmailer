@@ -10,6 +10,10 @@ lint: |
     yamllint .
     ansible-lint --offline --exclude molecule
 platforms:
+  - name: nullmailer-ubuntu-2204
+    image: ubuntu:22.04
+    command: /lib/systemd/systemd
+    privileged: true
   - name: nullmailer-ubuntu-2004
     image: ubuntu:20.04
     command: /lib/systemd/systemd

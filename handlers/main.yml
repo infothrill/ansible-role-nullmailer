@@ -1,7 +1,7 @@
 ---
 # handlers file for nullmailer
 
-- name: "restart nullmailer"
-  service:
+- name: "Restart nullmailer"
+  ansible.builtin.service:
     name: nullmailer
     state: restarted

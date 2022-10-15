@@ -89,6 +89,10 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### v3.2.0
+
+* drop support for ansible 4
+
 ### v3.1.0
 
 * add: nullmailer_relay_user can be empty to skip relay authentication
