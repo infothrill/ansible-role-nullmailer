@@ -89,6 +89,10 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
+### vxxx
+
+* drop support for ansible 5, python 3.8
+
 ### v3.2.0
 
 * drop support for ansible 4
