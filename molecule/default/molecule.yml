@@ -10,24 +10,20 @@ lint: |
     yamllint .
     ansible-lint --offline --exclude molecule
 platforms:
+  - name: nullmailer-ubuntu-2404
+    image: ubuntu:24.04
+    command: /lib/systemd/systemd
+    privileged: true
   - name: nullmailer-ubuntu-2204
     image: ubuntu:22.04
     command: /lib/systemd/systemd
     privileged: true
-  - name: nullmailer-ubuntu-2004
-    image: ubuntu:20.04
+  - name: nullmailer-debian-13-trixie
+    image: debian:trixie
     command: /lib/systemd/systemd
     privileged: true
-  - name: nullmailer-ubuntu-1804
-    image: ubuntu:18.04
-    command: /lib/systemd/systemd
-    privileged: true
-  - name: nullmailer-debian-11-bullseye
-    image: debian:bullseye
-    command: /lib/systemd/systemd
-    privileged: true
-  - name: nullmailer-debian-10-buster
-    image: debian:buster
+  - name: nullmailer-debian-12-bookworm
+    image: debian:bookworm
     command: /lib/systemd/systemd
     privileged: true
 provisioner:

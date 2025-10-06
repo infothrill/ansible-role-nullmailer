@@ -3,3 +3,6 @@
 .vagrant
 .molecule
 .tox
+.envrc
+.ansible
+.python-version
