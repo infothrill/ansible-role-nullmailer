@@ -14,18 +14,22 @@ platforms:
     image: ubuntu:24.04
     command: /lib/systemd/systemd
     privileged: true
+    dockerfile: Dockerfile.j2
   - name: nullmailer-ubuntu-2204
     image: ubuntu:22.04
     command: /lib/systemd/systemd
     privileged: true
+    dockerfile: Dockerfile.j2
   - name: nullmailer-debian-13-trixie
     image: debian:trixie
     command: /lib/systemd/systemd
     privileged: true
+    dockerfile: Dockerfile.j2
   - name: nullmailer-debian-12-bookworm
     image: debian:bookworm
     command: /lib/systemd/systemd
     privileged: true
+    dockerfile: Dockerfile.j2
 provisioner:
   name: ansible
   config_options:
