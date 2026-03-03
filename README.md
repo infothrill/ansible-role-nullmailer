@@ -1,7 +1,8 @@
 # Ansible Role: nullmailer
 
 ![Build status](https://github.com/infothrill/ansible-role-nullmailer/actions/workflows/tests.yml/badge.svg)
-[![Ansible Role](https://img.shields.io/ansible/role/30364.svg)](https://galaxy.ansible.com/infothrill/nullmailer/)
+
+[![Ansible Role](https://img.shields.io/ansible/role/d/infothrill/nullmailer)](https://galaxy.ansible.com/infothrill/nullmailer/)
 
 An [Ansible](http://www.ansible.com) role to install [nullmailer](https://untroubled.org/nullmailer/),
 a simple relay-only mail transport agent.
@@ -11,7 +12,7 @@ a simple relay-only mail transport agent.
 requirements.yml:
 
     - src: infothrill.nullmailer
-      version: v3.1.0
+      version: v3.3.0
 
 Install:
 
@@ -64,6 +65,12 @@ If this is defined, its contents will override the envelope sender on
 all messages. Please exercise caution with this setting as this determines bounce behaviour of undeliverable messages.
 
 ```yml
+nullmailer_defaultdomain: example.com
+```
+
+If this is defined, its contents will be stored in /etc/nullmailer/defaultdomain.
+
+```yml
 nullmailer_remote_ssl: true|false
 ```
 Toggle to add --ssl parameter for remote, default true.
@@ -89,9 +96,9 @@ This role was created in 2018 by Paul Kremer.
 
 ## Changes
 
-### vxxx
+### v3.3.0
 
-* drop support for ansible 5, python 3.8
+* Add support for new role variable `nullmailer_defaultdomain`
 
 ### v3.2.0
 

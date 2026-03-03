@@ -37,6 +37,16 @@
   when: nullmailer_allmailfrom is defined
   notify: Restart nullmailer
 
+- name: "Configure nullmailer defaultdomain"
+  ansible.builtin.template:
+    dest: /etc/nullmailer/defaultdomain
+    src: nullmailer_defaultdomain
+    owner: root
+    group: root
+    mode: 0644
+  when: nullmailer_defaultdomain is defined
+  notify: Restart nullmailer
+
 - name: Enable nullmailer
   ansible.builtin.service:
     name: nullmailer
