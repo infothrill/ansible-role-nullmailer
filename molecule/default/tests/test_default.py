@@ -11,4 +11,5 @@ def test_nullmailer_deployed(host):
     assert host.file('/etc/nullmailer/adminaddr').is_file
     assert host.file('/etc/nullmailer/remotes').is_file
     assert not host.file('/etc/nullmailer/allmailfrom').is_file
+    assert host.file('/etc/nullmailer/defaultdomain').content_string == 'example.com\n'
     assert host.package('nullmailer').is_installed
